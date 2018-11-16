@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/size_10"
+    android:paddingStart="@dimen/size_10"
+    android:paddingLeft="@dimen/size_10"
+    android:paddingRight="@dimen/size_10"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_dish"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_100"
+        android:layout_marginEnd="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_dish"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:maxLines="1"
+        android:text="@string/dish_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_18" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_toEndOf="@+id/iv_dish"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:maxLines="2"
+        android:text="@string/description"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_dish"
+        android:layout_alignStart="@+id/tv_name"
+        android:text="@string/rate"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/tv_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_below="@+id/iv_dish"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/colorGrey"/>
+
+</RelativeLayout>
