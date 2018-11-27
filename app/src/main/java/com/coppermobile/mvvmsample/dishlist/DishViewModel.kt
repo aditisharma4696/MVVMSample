@@ -3,17 +3,12 @@ package com.coppermobile.mvvmsample.dishlist
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
-import com.coppermobile.mvvmsample.models.DishResponse
+import com.coppermobile.mvvmsample.dishListRoom.Dish
 
 
-class DishViewModel : AndroidViewModel {
-    private var projectListObservable: LiveData<List<DishResponse>>
+class DishViewModel(application: Application) : AndroidViewModel(application) {
 
-    constructor(application: Application) : super(application) {
-        projectListObservable = DishRepository.instance.getDishList()
-    }
-
-    fun getDishListObservable(): LiveData<List<DishResponse>> {
-        return projectListObservable
+    fun getDishListObservable(): LiveData<List<Dish>> {
+        return DishRepository.getInstance(getApplication()).getDishList()
     }
 }

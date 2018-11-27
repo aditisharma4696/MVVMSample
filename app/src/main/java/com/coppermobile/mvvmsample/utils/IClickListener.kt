@@ -1,7 +1,7 @@
 package com.coppermobile.mvvmsample.utils
 
-import com.coppermobile.mvvmsample.models.DishResponse
+import com.coppermobile.mvvmsample.dishListRoom.Dish
 
 interface IClickListener {
-    abstract fun onItemPressed(dishResponse: DishResponse)
+     fun onItemPressed(dishResponse: Dish)
 }

@@ -15,6 +15,7 @@ import butterknife.BindString
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.coppermobile.mvvmsample.R
+import com.coppermobile.mvvmsample.dishListRoom.Dish
 import com.coppermobile.mvvmsample.models.DishResponse
 import com.coppermobile.mvvmsample.ui.MainActivity
 import com.coppermobile.mvvmsample.utils.Constants
@@ -46,8 +47,8 @@ class DishFragment : Fragment() {
     }
 
     private fun observeViewModel(viewModel: DishViewModel) {
-        viewModel.getDishListObservable().observe(this, object : Observer<List<DishResponse>> {
-            override fun onChanged(dishes: List<DishResponse>?) {
+        viewModel.getDishListObservable().observe(this, object : Observer<List<Dish>> {
+            override fun onChanged(dishes: List<Dish>?) {
                 dishAdapter.setDishList(dishes)
             }
         })
@@ -64,7 +65,7 @@ class DishFragment : Fragment() {
 
 
     private val dishClickCallback = object : IClickListener {
-        override fun onItemPressed(dishResponse: DishResponse) {
+        override fun onItemPressed(dishResponse: Dish) {
             if (lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) {
                 (activity as MainActivity).show(dishResponse)
             }

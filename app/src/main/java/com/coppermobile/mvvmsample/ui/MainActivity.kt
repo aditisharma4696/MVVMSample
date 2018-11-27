@@ -6,6 +6,7 @@ import android.widget.FrameLayout
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.coppermobile.mvvmsample.R
+import com.coppermobile.mvvmsample.dishListRoom.Dish
 import com.coppermobile.mvvmsample.dishdetail.DishDetailFragment
 import com.coppermobile.mvvmsample.dishlist.DishFragment
 import com.coppermobile.mvvmsample.models.DishResponse
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun show(dish: DishResponse) {
+    fun show(dish: Dish) {
         val dishDeatilFragment = DishDetailFragment.newInstance(dish)
 
         supportFragmentManager

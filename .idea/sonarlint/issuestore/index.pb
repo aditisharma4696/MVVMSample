@@ -33,8 +33,6 @@ R
 "app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
 p
 @app/src/main/java/com/coppermobile/mvvmsample/ui/MainActivity.kt,c\f\cfd9691293837e39124bcf872d0ae803c50b15e7
-e
-5app/src/main/java/com/coppermobile/mvvmsample/Dish.kt,c\f\cf75688b5fe340487a2c162122a17126f83c233f
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 Z
@@ -51,3 +49,17 @@ Happ/src/main/java/com/coppermobile/mvvmsample/dishlist/DishRepository.kt,d\9\d
 Napp/src/main/java/com/coppermobile/mvvmsample/dishdetail/DishDetailFragment.kt,b\e\be728dc9dbb7d87c61b65b6c0040db906920add1
 ˜
 happ/build/generated/source/kapt/debug/com/coppermobile/mvvmsample/dishlist/DishFragment_ViewBinding.java,a\7\a7d473125fe1575fde05b8c6fae191191780068e
+u
+Eapp/src/main/java/com/coppermobile/mvvmsample/dishListRoom/DishDAO.kt,6\e\6e67eb0bb032dff5d8f873adef8e483923c3c3fd
+x
+Happ/src/main/java/com/coppermobile/mvvmsample/commentRoom/CommentsDAO.kt,6\4\64834ce97bc7028f5a1f681fad0abf529df54cff
+u
+Eapp/src/main/java/com/coppermobile/mvvmsample/commentRoom/Comments.kt,0\c\0c33bccba662d2e3cc268eaf5085c4aa8b519020
+r
+Bapp/src/main/java/com/coppermobile/mvvmsample/dishListRoom/Dish.kt,9\a\9a845ea010cc5a4d4c790203653739c3a384a687
+]
+-app/src/main/res/drawable-v24/comment_box.xml,3\9\3996c49e2b5b3bbc30120c215d5f68eb655542ae
+u
+Eapp/src/main/java/com/coppermobile/mvvmsample/database/AppDatabase.kt,7\0\70e305a5742f9080a41f8c82b60473b54a960f15
+r
+Bapp/src/main/java/com/coppermobile/mvvmsample/utils/AppExecutor.kt,2\b\2b8d85332219b9e9847a0ac8e848792a02b57b32

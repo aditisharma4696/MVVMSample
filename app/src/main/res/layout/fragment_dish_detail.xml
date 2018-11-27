@@ -50,4 +50,49 @@
         android:textColor="@color/colorAccent"
         android:textStyle="bold" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_commentbox"
+        android:layout_below="@+id/tv_price"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/comment_box"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/ll_commentbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/comment_box"
+        android:padding="@dimen/size_5">
+
+        <EditText
+            android:id="@+id/et_comments"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/write_comment"
+            android:inputType="text"
+            android:paddingLeft="@dimen/size_5"
+            android:paddingStart="@dimen/size_5"
+            android:textColor="@color/colorDishName" />
+
+        <ImageView
+            android:id="@+id/iv_postComment"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginEnd="@dimen/size_2"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_2"
+            android:layout_marginStart="@dimen/size_5"
+            android:contentDescription="@string/image"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
 </RelativeLayout>

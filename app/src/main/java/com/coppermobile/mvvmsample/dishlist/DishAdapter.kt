@@ -13,6 +13,7 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import com.bumptech.glide.Glide
 import com.coppermobile.mvvmsample.R
+import com.coppermobile.mvvmsample.dishListRoom.Dish
 import com.coppermobile.mvvmsample.models.DishResponse
 import com.coppermobile.mvvmsample.utils.IClickListener
 
@@ -20,7 +21,7 @@ class DishAdapter(context: Context, iClickListener: IClickListener) : RecyclerVi
 
     var context: Context?
     var iClickListener: IClickListener?
-    private var dishList: List<DishResponse>? = null
+    private var dishList: List<Dish>? = null
 
     init {
         this.context = context
@@ -43,13 +44,13 @@ class DishAdapter(context: Context, iClickListener: IClickListener) : RecyclerVi
         val dishResponse = dishList?.get(position)
         if (dishResponse != null) {
             Glide.with(context)
-                    .load(dishResponse.thumbnail)
+                    .load(dishResponse.dishImage)
                     .placeholder(R.drawable.ic_launcher_background)
                     .error(R.drawable.image_not_found)
                     .into(holder.ivDish)
-            holder.tvName?.setText(dishResponse.name)
-            holder.tvDescription?.setText(dishResponse.description)
-            holder.tvPrice?.setText("₹ " + dishResponse.price)
+            holder.tvName?.setText(dishResponse.dishName)
+            holder.tvDescription?.setText(dishResponse.dishDescription)
+            holder.tvPrice?.setText("₹ " + dishResponse.dishPrice)
         }
         holder.rlContainer?.setOnClickListener({ v ->
             holder.itemView.setBackgroundResource(R.drawable.item_clicked)
@@ -61,7 +62,7 @@ class DishAdapter(context: Context, iClickListener: IClickListener) : RecyclerVi
         })
     }
 
-    fun setDishList(dishList: List<DishResponse>?) {
+    fun setDishList(dishList: List<Dish>?) {
         this.dishList=dishList
         notifyDataSetChanged()
     }
