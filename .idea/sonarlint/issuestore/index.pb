@@ -63,3 +63,17 @@ u
 Eapp/src/main/java/com/coppermobile/mvvmsample/database/AppDatabase.kt,7\0\70e305a5742f9080a41f8c82b60473b54a960f15
 r
 Bapp/src/main/java/com/coppermobile/mvvmsample/utils/AppExecutor.kt,2\b\2b8d85332219b9e9847a0ac8e848792a02b57b32
+}
+Mapp/src/main/java/com/coppermobile/mvvmsample/dishdetail/CommentRepository.kt,2\a\2a9c7e398ef146aa477ff6980750a9c2d801781f
+{
+Kapp/src/main/java/com/coppermobile/mvvmsample/dishdetail/CommentsAdapter.kt,d\c\dc293398cf65f2d9c98c6ad406f5059bfb30d815
+}
+Mapp/src/main/java/com/coppermobile/mvvmsample/dishdetail/CommentsViewModel.kt,9\8\98fb36f224b9c2aeba25425bac9bcf3b88e16509
+m
+=app/src/main/java/com/coppermobile/mvvmsample/utils/Helper.kt,7\e\7eede9dd1ffcc0875be596d0067e990d07e91490
+y
+Iapp/src/main/java/com/coppermobile/mvvmsample/utils/IShowPopUpListener.kt,c\e\ce46b03a5eac868cc1100a62a4143edd01817da9
+Y
+)app/src/main/res/layout/list_comments.xml,9\7\97bab90cddab7679fe5ee2b006de255d5a1a34c9
+W
+'app/src/main/res/menu/comments_menu.xml,3\c\3c8c8509ea54d4cc0730cf257472da0489494059
